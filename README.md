@@ -1,38 +1,41 @@
-# create-svelte
+# CIS 311 Portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Installation
 
-## Creating a project
+1. Install Node.js if you don't already have it. You can download it from [https://nodejs.org/en/](https://nodejs.org/en/).
 
-If you're seeing this, you've probably already done this step. Congrats!
+2. Clone the repository:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+git clone https://github.com/MaxChamberlain/CIS-311-Portfolio
 ```
 
-## Developing
+3. Navigate to the project directory:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+cd CIS-311-Portfolio
+```
+
+4. Install the required NPM packages:
+
+```bash
+npm install
+```
+
+## Usage
+
+To start the development server:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+This will start the server on localhost port 5173.
 
-To create a production version of your app:
+Navigate to [http://localhost:5173](http://localhost:5173) in your browser to view the project.
 
-```bash
-npm run build
-```
+## Additional Information
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- This project was bootstrapped with create-svelte.
+- It uses SvelteKit for routing and building.
+- The source code is available on GitHub at [https://github.com/MaxChamberlain/CIS-311-Portfolio](https://github.com/MaxChamberlain/CIS-311-Portfolio).
