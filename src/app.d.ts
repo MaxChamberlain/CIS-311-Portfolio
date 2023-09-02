@@ -10,3 +10,7 @@ declare global {
 }
 
 export {};
+
+declare module "*.svelte" {
+	export default any
+}
