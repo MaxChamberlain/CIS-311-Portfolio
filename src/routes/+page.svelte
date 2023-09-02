@@ -63,7 +63,7 @@
 			</ul>
 		</section>
 		<section
-			class="flex flex-col gap-12 w-full max-w-xl text-center items-center mx-auto xl:text-left xl:items-start xl:mx-0"
+			class="flex flex-col gap-8 xl:gap-14 w-full max-w-xl text-center items-center mx-auto xl:text-left xl:items-start xl:mx-0"
 		>
 			<img src={csuLogo} alt="CSU Pueblo Logo" class="w-full h-fit xl:h-32 xl:w-fit" />
 			<ul class="flex flex-col gap-4 xl:gap-2 w-full">
