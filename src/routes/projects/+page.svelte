@@ -18,7 +18,7 @@
 	<section class="max-h-[45rem] relative">
 		<div class="absolute bottom-0 right-0 left-0 h-8 bg-gradient-to-t from-[#f7f7f6] to-white/0" />
 		<div class="absolute top-0 right-0 left-0 h-8 bg-gradient-to-b from-[#f7f7f6] to-white/0" />
-		<ul class="flex flex-col gap-4 max-h-[45rem] border-y overflow-y-auto pt-8">
+		<ul class="flex flex-col gap-4 max-h-[45rem] border-y overflow-y-auto py-8">
 			{#each githubRepositories as repo}
 				<a
 					class="bg-white rounded border border-stone-100 hover:border-black hover:bg-stone-50 transition-colors w-full p-2 xl:p-4 shadow cursor-pointer"
