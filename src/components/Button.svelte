@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	export let type = 'primary';
-	export let onClick = () => {};
+	export let onClick: any;
 	export let label = '';
 	export let size = 'normal';
 	export let variant = 'filled';

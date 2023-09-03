@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { properNumber, properText } from '../utils/proper';
 	import Button from './Button.svelte';
 
@@ -20,6 +20,18 @@
 	colors.set('Svelte', '#ff3e00');
 	colors.set('HTML', '#de4b26');
 	colors.set('PHP', '#4f5d95');
+
+	function copyText(e: any) {
+		navigator.clipboard.writeText(repo.html_url);
+		e.target.innerText = 'Copied!';
+		e.target.style.opacity = 0.5;
+		e.target.style.pointerEvents = 'none';
+		setTimeout(() => {
+			e.target.innerText = 'Copy Clone Link';
+			e.target.style.opacity = 1;
+			e.target.style.pointerEvents = 'all';
+		}, 3000);
+	}
 </script>
 
 <li
@@ -42,17 +54,7 @@
 				type="primary"
 				size="small"
 				variant="outlined"
-				onClick={(e) => {
-					navigator.clipboard.writeText(repo.html_url);
-					e.target.innerText = 'Copied!';
-					e.target.style.opacity = 0.5;
-					e.target.style.pointerEvents = 'none';
-					setTimeout(() => {
-						e.target.innerText = 'Copy Clone Link';
-						e.target.style.opacity = 1;
-						e.target.style.pointerEvents = 'all';
-					}, 3000);
-				}}
+				onClick={copyText}
 				label="Copy Clone Link"
 			/>
 		</div>
