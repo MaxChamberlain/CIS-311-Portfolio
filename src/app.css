@@ -124,6 +124,8 @@ body {
 		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
 	background-color: #f7f7f6;
 	color: #333;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 html {
@@ -143,4 +145,18 @@ p {
 
 .min-h-acc-header {
 	min-height: calc(100vh - 4rem);
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 10rem;
 }
