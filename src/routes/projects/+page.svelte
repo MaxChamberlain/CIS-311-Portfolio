@@ -6,7 +6,7 @@
 </script>
 
 <main class="w-full max-w-7xl p-4 mx-auto">
-	<h1 class="py-8">GitHub Repositories</h1>
+	<h1 class="py-8 text-4xl xl:text-6xl">GitHub Repositories</h1>
 	<section class="max-h-[45rem] relative">
 		<div class="absolute bottom-0 right-0 left-0 h-8 bg-gradient-to-t from-[#f7f7f6] to-white/0" />
 		<div class="absolute top-0 right-0 left-0 h-8 bg-gradient-to-b from-[#f7f7f6] to-white/0" />

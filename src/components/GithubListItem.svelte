@@ -1,5 +1,5 @@
 <script>
-	import { properNumber } from '../utils/proper';
+	import { properNumber, properText } from '../utils/proper';
 	import Button from './Button.svelte';
 
 	export let repo = {
@@ -25,10 +25,10 @@
 <li
 	class="flex flex-col items-start whitespace-nowrap gap-4 bg-white rounded transition-colors w-full p-2 xl:p-4 shadow"
 >
-	<div class="w-full flex justify-between items-center">
+	<div class="w-full flex flex-col xl:flex-row justify-between items-start xl:items-center gap-2">
 		<div class="flex gap-2">
-			<h2>{repo.name}</h2>
-			<h2 class="opacity-20">{properNumber(repo.size)} KB</h2>
+			<h2>{properText(repo.name.split('-').join(' '))}</h2>
+			<h2 class="opacity-50">@{repo.name}</h2>
 		</div>
 		<div class="flex gap-2">
 			<Button
@@ -57,12 +57,13 @@
 			/>
 		</div>
 	</div>
-	<div class="w-full flex justify-between items-center">
+	<div class="w-full flex justify-between items-start xl:items-center gap-2 flex-col xl:flex-row">
 		<div class="w-full flex justify-start items-center gap-2 opacity-80 text-sm">
 			<div class="h-4 w-4 rounded-full" style={`background-color: ${colors.get(repo.language)}`} />
 			<h2>{repo.language}</h2>
 		</div>
-		<div class="flex items-center gap-2">
+		<div class="flex items-center gap-2 justify-end">
+			<h2 class="opacity-20">{properNumber(repo.size)} KB</h2>
 			<p class="text-sm opacity-60">{repo.default_branch} branch</p>
 			<img src={repo.owner.avatar_url} alt="avatar" class="h-5 w-5 rounded-full" />
 		</div>
