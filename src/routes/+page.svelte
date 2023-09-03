@@ -31,6 +31,7 @@
 				<Button
 					label="Projects"
 					type="secondary"
+					variant="outlined"
 					onClick={() => (window.location.href = '/projects')}
 				/>
 			</div>

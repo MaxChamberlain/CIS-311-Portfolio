@@ -38,7 +38,7 @@
 	class="flex flex-col items-start whitespace-nowrap gap-4 bg-white rounded transition-colors w-full p-2 xl:p-4 shadow"
 >
 	<div class="w-full flex flex-col xl:flex-row justify-between items-start xl:items-center gap-2">
-		<div class="flex gap-2">
+		<div class="flex gap-2 flex-col xl:flex-row">
 			<h2>{properText(repo.name.split('-').join(' '))}</h2>
 			<h2 class="opacity-50">@{repo.name}</h2>
 		</div>
