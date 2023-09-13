@@ -8,10 +8,13 @@
 </script>
 
 <main class="p-4 w-full xl:max-w-7xl flex items-start xl:items-center mx-auto min-h-acc-header">
+  <a href="#about-me" class="absolute -top-16 left-0 right-0 h-16 w-full">About Me</a>
+  <a href='#my-courses' class="absolute -top-16 left-0 right-0 h-16 w-full">My Courses</a>
 	<div
 		class="h-full w-full flex flex-col-reverse xl:flex-row justify-end xl:justify-between items-start xl:items-center pt-2 xl:pt-0 gap-8"
 	>
 		<section
+      id="about-me"
 			class="flex flex-col gap-8 xl:gap-14 w-full max-w-md text-center items-center mx-auto xl:text-left xl:items-start xl:mx-0 py-8"
 		>
 			<h1 class="tracking-tight text-4xl xl:text-6xl">
@@ -64,6 +67,7 @@
 			</ul>
 		</section>
 		<section
+      id='my-courses'
 			class="flex flex-col gap-8 xl:gap-14 w-full max-w-xl text-center items-center mx-auto xl:text-left xl:items-start xl:mx-0"
 		>
 			<img src={csuLogo} alt="CSU Pueblo Logo" class="w-full h-fit xl:h-32 xl:w-fit" />
