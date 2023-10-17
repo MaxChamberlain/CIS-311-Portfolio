@@ -29,8 +29,8 @@
           <GithubListItemPlaceholder />
         {/each}
       {:else}
-        {#each githubRepositories as repo}
-          <GithubListItem {repo} />
+        {#each githubRepositories as repo, index}
+          <GithubListItem {repo} {index} />
         {/each}
       {/if}
 		</ul>

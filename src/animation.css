@@ -1,0 +1,13 @@
+.fade-enter{
+  opacity: 0.1;
+  animation: fade-enter 100ms ease-in-out forwards;
+}
+
+@keyframes fade-enter {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

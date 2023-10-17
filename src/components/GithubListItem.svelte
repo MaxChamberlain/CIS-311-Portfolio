@@ -12,6 +12,8 @@
 		},
 		size: 0
 	};
+  export let index = 0;
+
 	const colors = new Map();
 	colors.set('JavaScript', '#f1e05a');
 	colors.set('TypeScript', '#3178c6');
@@ -35,7 +37,8 @@
 </script>
 
 <li
-	class="flex flex-col items-start whitespace-nowrap gap-4 bg-white rounded transition-colors w-full p-2 xl:p-4 shadow"
+	class={`flex flex-col items-start whitespace-nowrap gap-4 bg-white rounded transition-colors w-full p-2 xl:p-4 shadow fade-enter`}
+  style={`animation-delay: ${index * 50}ms`}
 >
 	<div class="w-full flex flex-col xl:flex-row justify-between items-start xl:items-center gap-2">
 		<div class="flex gap-2 flex-col xl:flex-row">
