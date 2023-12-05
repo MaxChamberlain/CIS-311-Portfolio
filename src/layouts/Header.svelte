@@ -6,6 +6,9 @@
 	const toggleNavMenu = () => {
 		navMenuOpen = !navMenuOpen;
 	};
+	const closeNavMenu = () => {
+		navMenuOpen = false;
+	};
 </script>
 
 <header
@@ -41,10 +44,9 @@
 			>
 				Menu
 			</h2>
-			<NavButton href="/" label="Home" />
-			<NavButton href="/about" label="About Me" />
-			<NavButton href="/education" label="Education" />
-			<NavButton href="/projects" label="My Projects" />
+			<NavButton href="/" label="Home" onNavigate={() => closeNavMenu()} />
+			<NavButton href="/about" label="About Me" onNavigate={() => closeNavMenu()} />
+			<NavButton href="/projects" label="My Projects" onNavigate={() => closeNavMenu()} />
 		</nav>
 	</div>
 </header>
